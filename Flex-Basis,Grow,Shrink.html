@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Shrink-grow-basis</title>
+    <!--CSS Style tag-->
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 400;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #container-1 {
+            width: 80%;
+            margin: 0px auto;
+            background-color: darkblue;
+            border: 5px solid darkblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #container-1 div {
+            height: 200px;
+            flex-basis: 350px;
+        }
+
+        #container-2 {
+            width: 80%;
+            margin: 0px auto;
+            background-color: darkblue;
+            border: 5px solid darkblue;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        #container-2 div {
+            width: 200px;
+            flex-basis: 300px;
+        }
+
+        #container-3 {
+            width: 80%;
+            margin: 0px auto;
+            background-color: darkblue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 5px solid darkblue;
+        }
+
+        #container-3 div {
+            width: 200px;
+            height: 200px;
+        }
+
+        #container-3 div:nth-of-type(1) {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        #container-3 div:nth-of-type(2) {
+            flex-grow: 1;
+        }
+
+        #container-3 div:nth-of-type(4) {
+            flex-shrink: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Let's play with Flex- Basis</h1>
+
+    <caption>Flex-Basis => Row</caption>
+    <section id="container-1">
+        <div style="background-color:#F4EEFF;"></div>
+        <div style="background-color:#DCD6F7;"></div>
+        <div style="background-color:#A6B1E1;"></div>
+        <div style="background-color:#424874;"></div>
+        <div style="background-color:#7F669D;"></div>
+    </section>
+
+    <caption>Flex-Basis => Column</caption>
+    <section id="container-2">
+        <div style="background-color:#F4EEFF;"></div>
+        <div style="background-color:#DCD6F7;"></div>
+        <div style="background-color:#A6B1E1;"></div>
+        <div style="background-color:#424874;"></div>
+        <div style="background-color:#7F669D;"></div>
+    </section>
+
+    <h1>Let's learn Flex-Grow</h1>
+
+    <caption>Flex-Grow & Shirnk => Row</caption>
+    <section id="container-3">
+        <div style="background-color:#F4EEFF;"></div>
+        <div style="background-color:#DCD6F7;"></div>
+        <div style="background-color:#A6B1E1;"></div>
+        <div style="background-color:#424874;"></div>
+        <div style="background-color:#7F669D;"></div>
+    </section>
+
+</body>
+
+</html>

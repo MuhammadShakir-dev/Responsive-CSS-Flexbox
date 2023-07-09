@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Content & Self</title>
+
+    <!--CSS Style tag-->
+    <style>
+      body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Work Sans';
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+#container {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    background-color: rgb(11, 28, 73);
+    border: 5px solid rgb(11, 28, 73);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#container div {
+    width: 600px;
+    height: 200px;
+}
+
+#container-1 {
+    width: 80%;
+    height: 500px;
+    background-color: rgb(11, 28, 73);
+    border: 5px solid rgb(11, 28, 73);
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-end;
+
+}
+
+#container-1 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container-2 {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    background-color: rgb(11, 28, 73);
+    border: 5px solid rgb(11, 28, 73);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#container-2 div {
+    width: 600px;
+    height: 200px;
+}
+
+#container-3 {
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    background-color: rgb(11, 28, 73);
+    border: 5px solid rgb(11, 28, 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-content: space-between;
+}
+
+#container-3 div {
+    width: 200px;
+    height: 200px;
+}
+
+#container-4{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    background-color: rgb(11, 28, 73);
+    border: 5px solid rgb(11, 28, 73);
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+#container-4 div{
+    width: 200px;
+    height: 200px;
+}
+
+/* Align Self Properties */
+
+#container-5{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    border: 5px solid rgb(11, 28, 73);
+    background-color: rgb(11, 28, 73) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+
+#container-5 div{
+    width: 200px;
+    height: 200px;
+}
+
+#container-6{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    border: 5px solid rgb(11, 28, 73);
+    background-color: rgb(11, 28, 73) ;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+    #container-6 div{
+        width: 200px;
+        height: 200px;
+    }
+
+#container-7{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    border: 5px solid rgb(11, 28, 73);
+    background-color: rgb(11, 28, 73) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+    #container-7 div{
+        width: 200px;
+        height: 200px;
+    }
+
+#container-8{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    border: 5px solid rgb(11, 28, 73);
+    background-color: rgb(11, 28, 73) ;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+    #container-8 div{
+        width: 200px;
+        height: 200px;
+    }
+
+#container-9{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+    border: 5px solid rgb(11, 28, 73);
+    background-color: rgb(11, 28, 73) ;
+    display: flex;
+    flex-direction: column;  
+    justify-content:space-evenly; 
+
+}
+
+#container-9 div{
+    width: 200px;
+    height: 200px;
+}
+
+#container-5 div:nth-of-type(2){
+    align-self: flex-end;
+} 
+
+#container-6 div:nth-of-type(2){
+    align-self: flex-start;
+}
+
+#container-7 div:nth-of-type(2){
+    align-self: center;
+}
+
+#container-8 div:nth-of-type(2){
+    align-self: center;
+}
+
+#container-9 div:nth-of-type(2){
+    align-self: flex-end;
+}
+    </style>
+  
+</head>
+<body>
+    <h1>Let's learn about Align items</h1>
+
+    <!--Align Content-->
+    <caption>Align-Content - Flex-start</caption>
+    <section id="container">
+        <div style="background-color:#A7EDE7 ;"></div>
+        <div style="background-color:#45CFDD;"></div>
+        <div style="background-color:#9681EB ;"></div>
+        <div style="background-color:#6527BE;"></div>
+    </section>
+
+    <caption>Align-Content - Flex-end</caption>
+    <section id="container-1">
+        <div style="background-color:#A7EDE7 ;"></div>
+        <div style="background-color:#45CFDD;"></div>
+        <div style="background-color:#9681EB ;"></div>
+        <div style="background-color:#6527BE;"></div>
+    </section>
+
+    <caption>Align-Content - Space-around</caption>
+    <section id="container-2">
+        <div style="background-color:#DAFFFB ;"></div>
+        <div style="background-color:#64CCC5 ;"></div>
+        <div style="background-color:#176B87 ;"></div>
+        <div style="background-color:#001C30 ;"></div>
+    </section>
+
+    <caption>Align-Content - Space-between</caption>
+    <section id="container-3">
+        <div style="background-color:#DAFFFB ;"></div>
+        <div style="background-color:#64CCC5 ;"></div>
+        <div style="background-color:#176B87 ;"></div>
+        <div style="background-color:#001C30 ;"></div>
+    </section>
+
+    <caption>Align-Content - Space-evenly</caption>
+    <section id="container-4">
+        <div style="background-color:#F4EEFF ;"></div>
+        <div style="background-color:#DCD6F7 ;"></div>
+        <div style="background-color:#A6B1E1 ;"></div>
+        <div style="background-color:#424874 ;"></div>
+    </section>
+
+    <!--Align Self-->
+    <h1>Let's learn about Align Self</h1>
+    <caption>Align-self - Flex-start</caption>
+    <section id="container-5">
+        <div style="background-color:#A7EDE7 ;"></div>
+        <div style="background-color:#45CFDD;"></div>
+        <div style="background-color:#9681EB ;"></div>
+        <div style="background-color:#6527BE;"></div>
+    </section>
+
+    <caption>Align-self - Flex-end</caption>
+    <section id="container-6">
+        <div style="background-color:#A7EDE7 ;"></div>
+        <div style="background-color:#45CFDD;"></div>
+        <div style="background-color:#9681EB ;"></div>
+        <div style="background-color:#6527BE;"></div>
+    </section>
+
+    <caption>Align-self - Space-around</caption>
+    <section id="container-7">
+        <div style="background-color:#DAFFFB ;"></div>
+        <div style="background-color:#64CCC5 ;"></div>
+        <div style="background-color:#176B87 ;"></div>
+        <div style="background-color:#001C30 ;"></div>
+    </section>
+
+    <caption>Align-self - Space-between</caption>
+    <section id="container-8">
+        <div style="background-color:#DAFFFB ;"></div>
+        <div style="background-color:#64CCC5 ;"></div>
+        <div style="background-color:#176B87 ;"></div>
+        <div style="background-color:#001C30 ;"></div>
+    </section>
+
+    <caption>Align-self - Space-evenly</caption>
+    <section id="container-9">
+        <div style="background-color:#F4EEFF ;"></div>
+        <div style="background-color:#DCD6F7 ;"></div>
+        <div style="background-color:#A6B1E1 ;"></div>
+        <div style="background-color:#424874 ;"></div>
+    </section>
+</body>
+</html>
